@@ -1,4 +1,4 @@
-# Bienvenido al Módulo Sistemas Dinámicos
+# Bienvenido al Módulo: Sistemas Dinámicos
 
 En este proyecto se abordo la evolución temporal de sistemas cuánticos utilizando el método numérico de Runge-Kutta de orden cuatro (RK4). El objetivo es resolver ecuaciones diferenciales que describen la dinámicoa temporal de un sitema de matrices, en particular para problemas en los que la función de evolución no tiene una dependencia explícita del tiempo.
 
