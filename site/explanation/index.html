@@ -1,0 +1,510 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../tutorials/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.35">
+    
+    
+      
+        <title>Explicación - Sistemas Dinámicos</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#explicacion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Sistemas Dinámicos" class="md-header__button md-logo" aria-label="Sistemas Dinámicos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sistemas Dinámicos
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Explicación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Sistemas Dinámicos" class="md-nav__button md-logo" aria-label="Sistemas Dinámicos" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Sistemas Dinámicos
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bienvenido al Módulo Sistemas Dinámicos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Explicación
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Explicación
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-dinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistemas dinámicos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soluciones-a-sistemas-dinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soluciones a sistemas dinámicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Soluciones a sistemas dinámicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodo-runge-kutta-de-orden-4-rk4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método Runge-Kutta de orden 4 (RK4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto-de-uso-en-este-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contexto de uso en este proyecto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflexiones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tutorial
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Referencias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sistemas-dinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistemas dinámicos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soluciones-a-sistemas-dinamicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Soluciones a sistemas dinámicos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Soluciones a sistemas dinámicos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodo-runge-kutta-de-orden-4-rk4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Método Runge-Kutta de orden 4 (RK4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contexto-de-uso-en-este-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contexto de uso en este proyecto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflexiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflexiones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="explicacion">Explicación</h1>
+<p>Esta parte de la documentación del proyecto se enfoca en una comprensión más profunda de los <strong>sistemas dinámicos</strong> y cómo los resolvemos numéricamente utilizando el método <strong>Runge-Kutta de cuarto orden (RK4)</strong>.</p>
+<h2 id="sistemas-dinamicos">Sistemas dinámicos</h2>
+<p>Los sistemas dinámicos son modelos de gran importancia en diversas ciencias. Un modelo dinámico busca resolver la trayectoria temporal de alguna cantidad física como función de un generador dinámico, que suele representarse de forma funcional.</p>
+<p>Podemos modelar la dinámica de un estado genérico <span class="arithmatex">\( y \)</span> mediante la siguiente <strong>ecuación dinámica</strong>:</p>
+<div class="arithmatex">\[
+\frac{dy}{dt} = f(t, y),
+\]</div>
+<p>la cual está sujeta a la condición inicial:</p>
+<div class="arithmatex">\[
+y(t_0) = y_0.
+\]</div>
+<p>En esta notación:
+- <span class="arithmatex">\( y \)</span> representa el estado del sistema. Este estado puede ser un escalar o incluso una matriz que represente algún operador lineal.
+- <span class="arithmatex">\( t \)</span> es la variable temporal.</p>
+<p>Este tipo de problema es conocido como un <strong>problema de condición inicial</strong> en el campo de las matemáticas aplicadas, ya que se busca encontrar la trayectoria de <span class="arithmatex">\( y \)</span> en función del tiempo, dado un estado inicial en <span class="arithmatex">\( t_0 \)</span>.</p>
+<h2 id="soluciones-a-sistemas-dinamicos">Soluciones a sistemas dinámicos</h2>
+<p>Resolver ecuaciones diferenciales para sistemas dinámicos es un tema fundamental que se abordará más a fondo en el curso. Sin embargo, en este contexto, el objetivo es familiarizarnos con las herramientas y métodos de programación científica que nos permiten resolver estos problemas numéricamente.</p>
+<h3 id="metodo-runge-kutta-de-orden-4-rk4">Método Runge-Kutta de orden 4 (RK4)</h3>
+<p>Para resolver numéricamente sistemas dinámicos, utilizamos el <strong>método de Runge-Kutta de cuarto orden (RK4)</strong>, un método explícito que proporciona un buen equilibrio entre precisión y costo computacional.</p>
+<p>El método RK4 estima la solución en un tiempo <span class="arithmatex">\( t_{n+1} \)</span> basado en la solución anterior <span class="arithmatex">\( t_n \)</span> de la siguiente forma:</p>
+<div class="arithmatex">\[
+y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4),
+\]</div>
+<p>donde los términos <span class="arithmatex">\( k_1, k_2, k_3 \)</span> y <span class="arithmatex">\( k_4 \)</span> se calculan como sigue:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+k_1 &amp;= h f(t_n, y_n), \\
+k_2 &amp;= h f\left(t_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right), \\
+k_3 &amp;= h f\left(t_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right), \\
+k_4 &amp;= h f(t_n + h, y_n + k_3).
+\end{aligned}
+\]</div>
+<h3 id="contexto-de-uso-en-este-proyecto">Contexto de uso en este proyecto</h3>
+<p>El método RK4 es una herramienta poderosa cuando se trata de resolver ecuaciones diferenciales en sistemas dinámicos. Este proyecto implementa el método para simular la evolución temporal de sistemas en los que el estado <span class="arithmatex">\( y \)</span> puede representar una cantidad física, como la posición de un cuerpo, o una matriz cuántica que representa el estado de un sistema.</p>
+<p>Al usar este método, los usuarios pueden experimentar con la simulación de diferentes sistemas dinámicos, proporcionando una comprensión más profunda de cómo estos sistemas evolucionan en el tiempo y cómo se pueden aproximar soluciones a problemas complejos mediante métodos numéricos.</p>
+<h2 id="reflexiones">Reflexiones</h2>
+<p>Este enfoque no solo introduce a los usuarios a la implementación práctica de métodos numéricos como RK4, sino que también proporciona una base sólida para explorar y aplicar estos métodos en otras áreas de las ciencias aplicadas y la ingeniería. Las simulaciones numéricas son esenciales para resolver problemas que no tienen soluciones analíticas, y este proyecto proporciona las herramientas para llevar a cabo estas simulaciones de manera eficiente.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
